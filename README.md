@@ -34,23 +34,22 @@ cheap. The wholesaler was practically giving them away as the ribbon cable
 connection was on the wrong side of the board, thus reversing the connections.
 Funny that it worked for me ;)
 
-  +-----------------------------------------+
-  |      PS2 Keyboard connector             |
-  +-----+------+-------+--------------------+
-  | Pin | Name |  Dir  |     Description    |
-  +-----+------+-------+--------------------+
-  |  1  | DATA |  <->  | Key Data           |
-  +-----+------+-------+--------------------+
-  |  2  | n/c  |  ---  | Not connected      |
-  +-----+------+-------+--------------------+
-  |  3  | GND  |  ---  | Ground             |
-  +-----+------+-------+--------------------+
-  |  4  | VCC  |  -->  | Power , +5 VDC     |
-  +-----+------+-------+--------------------+
-  |  5  | CLK  |  -->  | Clock              |
-  +-----+------+-------+--------------------+
-  |  6  | n/c  |  ---  | Not connected      |
-  +-----+------+-------+--------------------+
+        PS2 Keyboard connector          
+
+   Pin  Name   Dir       Description    
+  ----------------------------------
+    1   DATA   <->   Key Data       
+    
+    2   n/c    ---   Not connected      
+
+    3   GND    ---   Ground             
+
+    4   VCC    -->   Power , +5 VDC     
+
+    5   CLK    -->   Clock              
+
+    6   n/c    ---   Not connected      
+
 
  Note: Direction is Computer relative Keyboard.
 
@@ -58,14 +57,20 @@ To implement this PS2 Keyboard library, The Keyboard Clock line must be
 connected to INT1 (PD3), and the data line to PD4
 
   CLK - PD3 (7)
+
   DAT - PD4 (8)
 
+
 Futurlec EXP20 Connector Pinout to PS2 Keyboard connector pinout
-Pin  Name  Func   PS2 Conn
---------------------------
+ Pin  Name  Func   PS2 Conn
+ --------------------------
+
   1 - VCC - PWR - 4
+
  14 - PD3 - CLK - 5
+
  16 - PD4 - DAT - 1
+
  20 - GND - GND - 3 
 
 All parts not otherwise so:
