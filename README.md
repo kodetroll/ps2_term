@@ -37,17 +37,23 @@ cheap. The wholesaler was practically giving them away as the ribbon cable
 connection was on the wrong side of the board, thus reversing the connections.
 Funny that it worked for me ;)
 
- Hardware connection info:
- PS2 Keyboard connector:
- Pin 	Name 	Dir 	Description
- -----------------------------------
-
-  1 	DATA 	<-> 	Key Data
-  2 	n/c 	--- 	Not connected
-  3 	GND 	--- 	Gnd
-  4 	VCC 	--> 	Power , +5 VDC
-  5 	CLK 	--> 	Clock
-  6 	n/c 	--- 	Not connected
+  +-----------------------------------------+
+  |      PS2 Keyboard connector             |
+  +-----+------+-------+--------------------+
+  | Pin | Name |  Dir  |     Description    |
+  +-----+------+-------+--------------------+
+  |  1  | DATA |  <->  | Key Data           |
+  +-----+------+-------+--------------------+
+  |  2  | n/c  |  ---  | Not connected      |
+  +-----+------+-------+--------------------+
+  |  3  | GND  |  ---  | Ground             |
+  +-----+------+-------+--------------------+
+  |  4  | VCC  |  -->  | Power , +5 VDC     |
+  +-----+------+-------+--------------------+
+  |  5  | CLK  |  -->  | Clock              |
+  +-----+------+-------+--------------------+
+  |  6  | n/c  |  ---  | Not connected      |
+  +-----+------+-------+--------------------+
 
  Note: Direction is Computer relative Keyboard.
 
