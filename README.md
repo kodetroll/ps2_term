@@ -1,6 +1,5 @@
 ps2_term
 ========
-
 Description
 ----------------
 PS2 Keyboard and LCD serial terminal for Atmel AVR ATTiny4313.
@@ -11,20 +10,18 @@ To clone this repo, type:
 
 git clone https://github.com/kodetroll/ps2_term.git
 
-
 Discussion
 ----------------
 Allows user to connect a PS2 keyboard and a 24X2 character (HD44780 style) LCD
 display to the Futurlec board and use this as a serial terminal. The code will
 not fit on a 2313, so a ATTiny4313 was selected instead. This project uses 
 modified copies of Peter Fleury's LCD library (Hacked to accomodate no RW pin
-on the LCD) and Jurre Hanema's PS2KBD library. 
+on the LCD, a Futurlec derp) and Jurre Hanema's PS2KBD library. 
 
 Hardware
 ----------------
 The PS2 keyboard has four connections that must be dealt with. Power, ground, 
-clock and data. Power is supplied to the keyboard from the Futurlec boards VCC
-connection, as is ground. The PS2 keyboard clock is attached to INT1 (as this 
+clock and data. Power is supplied to the keyboard from the Futurlec boards VCC connection, as is ground. The PS2 keyboard clock is attached to INT1 (as this 
 signal needs to be handled by an interrupt) and the data is attached to a GPIO
 pin (usually PB4). These pins can easily be accessed via the EXP20 connector
 on the Futurlec board. The LCD is connected via the LCD connector on the 
@@ -69,11 +66,9 @@ Pin  Name  Func   PS2 Conn
   1 - VCC - PWR - 4
  14 - PD3 - CLK - 5
  16 - PD4 - DAT - 1
- 20 - GND - GND - 3
-
+ 20 - GND - GND - 3 
 
 All parts not otherwise so:
 (C) 2012 KB4OID Labs, a division of Kodetroll Heavy Industries
 
 Thanks and good luck.....Kodetroll
-
